@@ -7,11 +7,16 @@
 //
 
 #import "PMAppDelegate.h"
+#import <DCIntrospect/DCIntrospect.h>
 
 @implementation PMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+#if TARGET_IPHONE_SIMULATOR
+    [[DCIntrospect sharedIntrospector] start];
+#endif
     // Override point for customization after application launch.
     return YES;
 }
