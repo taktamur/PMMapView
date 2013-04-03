@@ -9,6 +9,8 @@
 #import "PMMapView.h"
 #import <BlocksKit/BlocksKit.h>
 
+// TODO 状態変更時のトーストを表示したい
+
 @interface PMMapView()
 @property(nonatomic,strong)UIButton *hereButton;
 
@@ -49,7 +51,7 @@
 -(void)setup
 {
     self.zoomInLimit = 0.0001;
-    self.zoomOutLimit = 65.0;
+    self.zoomOutLimit = 180.0;
     self.zoomStep = 0.2;
 
     // Adding zoomin/out button
