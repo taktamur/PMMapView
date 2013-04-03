@@ -13,4 +13,9 @@
 @property(nonatomic)double zoomStep;
 @property(nonatomic)double zoomInLimit;
 @property(nonatomic)double zoomOutLimit;
+
+@property(nonatomic,strong)UIControl *zoominButton;
+@property(nonatomic,strong)UIControl *zoomoutButton;
+@property(nonatomic,strong)UIControl *userTrackingButton;
+
 @end
